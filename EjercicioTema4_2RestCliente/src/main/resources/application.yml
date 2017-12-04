@@ -1,0 +1,17 @@
+server:
+  port: 8443
+  ssl:
+    key-store: keystore.jks
+    key-store-password: password
+    key-password: secret
+spring:
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: validate
+
+  datasource:
+    url: jdbc:mysql://localhost/docker
+    username: lorena
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
